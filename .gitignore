@@ -1,0 +1,36 @@
+# Local state and recoveries - never commit runtime storage
+.local/
+backups/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.tar.gz
+*.tar
+*.log
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Sensitive local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.asc
+credentials*
+secrets*
+
+# Editor/OS
+.DS_Store
+.vscode/settings.json
+
+# Local compose copies
+docker-compose.yml.before-*
